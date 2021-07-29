@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		96CCB9352692AF5C006490B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CCB9332692AF5C006490B3 /* Main.storyboard */; };
 		96CCB9412692AF5C006490B3 /* TimeCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB9402692AF5C006490B3 /* TimeCardTests.swift */; };
 		96CCB94C2692AF5C006490B3 /* TimeCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB94B2692AF5C006490B3 /* TimeCardUITests.swift */; };
+		96D7365826B31B1C005B0CDA /* TimeCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D7365726B31B1C005B0CDA /* TimeCardController.swift */; };
+		96D7365B26B31BB9005B0CDA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 96D7365A26B31BB9005B0CDA /* Realm */; };
+		96D7365D26B31BB9005B0CDA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 96D7365C26B31BB9005B0CDA /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 		96CCB9472692AF5C006490B3 /* TimeCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CCB94B2692AF5C006490B3 /* TimeCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardUITests.swift; sourceTree = "<group>"; };
 		96CCB94D2692AF5C006490B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D7365726B31B1C005B0CDA /* TimeCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D7365D26B31BB9005B0CDA /* RealmSwift in Frameworks */,
+				96D7365B26B31BB9005B0CDA /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,7 @@
 			children = (
 				96CCB92A2692AF5A006490B3 /* AppDelegate.swift */,
 				96CCB92C2692AF5A006490B3 /* ContentView.swift */,
+				96D7365726B31B1C005B0CDA /* TimeCardController.swift */,
 				96CCB92E2692AF5C006490B3 /* Assets.xcassets */,
 				96CCB9332692AF5C006490B3 /* Main.storyboard */,
 				96CCB9362692AF5C006490B3 /* Info.plist */,
@@ -151,6 +158,10 @@
 			dependencies = (
 			);
 			name = TimeCard;
+			packageProductDependencies = (
+				96D7365A26B31BB9005B0CDA /* Realm */,
+				96D7365C26B31BB9005B0CDA /* RealmSwift */,
+			);
 			productName = TimeCard;
 			productReference = 96CCB9272692AF5A006490B3 /* TimeCard.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 96CCB91E2692AF5A006490B3;
+			packageReferences = (
+				96D7365926B31BB9005B0CDA /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 96CCB9282692AF5A006490B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CCB92D2692AF5A006490B3 /* ContentView.swift in Sources */,
+				96D7365826B31B1C005B0CDA /* TimeCardController.swift in Sources */,
 				96CCB92B2692AF5A006490B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -469,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -600,6 +615,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96D7365926B31BB9005B0CDA /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96D7365A26B31BB9005B0CDA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D7365926B31BB9005B0CDA /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		96D7365C26B31BB9005B0CDA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D7365926B31BB9005B0CDA /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96CCB91F2692AF5A006490B3 /* Project object */;
 }
