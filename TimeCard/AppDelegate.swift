@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.action = #selector(showHidePopover(_:))
         
         let popover = NSPopover()
-        popover.contentSize = NSSize(width: 350, height: 500)
+        popover.contentSize = NSSize(width: 300, height: 300)
         popover.behavior = .transient
         let contentView = ContentView()
         popover.contentViewController = NSHostingController(rootView: contentView)
