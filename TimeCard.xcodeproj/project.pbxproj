@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96CCB92B2692AF5A006490B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB92A2692AF5A006490B3 /* AppDelegate.swift */; };
+		96CCB92D2692AF5A006490B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB92C2692AF5A006490B3 /* ContentView.swift */; };
+		96CCB92F2692AF5C006490B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CCB92E2692AF5C006490B3 /* Assets.xcassets */; };
+		96CCB9322692AF5C006490B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CCB9312692AF5C006490B3 /* Preview Assets.xcassets */; };
+		96CCB9352692AF5C006490B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CCB9332692AF5C006490B3 /* Main.storyboard */; };
+		96CCB9412692AF5C006490B3 /* TimeCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB9402692AF5C006490B3 /* TimeCardTests.swift */; };
+		96CCB94C2692AF5C006490B3 /* TimeCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CCB94B2692AF5C006490B3 /* TimeCardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96CCB93D2692AF5C006490B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CCB91F2692AF5A006490B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CCB9262692AF5A006490B3;
+			remoteInfo = TimeCard;
+		};
+		96CCB9482692AF5C006490B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96CCB91F2692AF5A006490B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96CCB9262692AF5A006490B3;
+			remoteInfo = TimeCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96CCB9272692AF5A006490B3 /* TimeCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CCB92A2692AF5A006490B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96CCB92C2692AF5A006490B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96CCB92E2692AF5C006490B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96CCB9312692AF5C006490B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96CCB9342692AF5C006490B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96CCB9362692AF5C006490B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CCB9372692AF5C006490B3 /* TimeCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeCard.entitlements; sourceTree = "<group>"; };
+		96CCB93C2692AF5C006490B3 /* TimeCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CCB9402692AF5C006490B3 /* TimeCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardTests.swift; sourceTree = "<group>"; };
+		96CCB9422692AF5C006490B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CCB9472692AF5C006490B3 /* TimeCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CCB94B2692AF5C006490B3 /* TimeCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardUITests.swift; sourceTree = "<group>"; };
+		96CCB94D2692AF5C006490B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96CCB9242692AF5A006490B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB9392692AF5C006490B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB9442692AF5C006490B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96CCB91E2692AF5A006490B3 = {
+			isa = PBXGroup;
+			children = (
+				96CCB9292692AF5A006490B3 /* TimeCard */,
+				96CCB93F2692AF5C006490B3 /* TimeCardTests */,
+				96CCB94A2692AF5C006490B3 /* TimeCardUITests */,
+				96CCB9282692AF5A006490B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96CCB9282692AF5A006490B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96CCB9272692AF5A006490B3 /* TimeCard.app */,
+				96CCB93C2692AF5C006490B3 /* TimeCardTests.xctest */,
+				96CCB9472692AF5C006490B3 /* TimeCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96CCB9292692AF5A006490B3 /* TimeCard */ = {
+			isa = PBXGroup;
+			children = (
+				96CCB92A2692AF5A006490B3 /* AppDelegate.swift */,
+				96CCB92C2692AF5A006490B3 /* ContentView.swift */,
+				96CCB92E2692AF5C006490B3 /* Assets.xcassets */,
+				96CCB9332692AF5C006490B3 /* Main.storyboard */,
+				96CCB9362692AF5C006490B3 /* Info.plist */,
+				96CCB9372692AF5C006490B3 /* TimeCard.entitlements */,
+				96CCB9302692AF5C006490B3 /* Preview Content */,
+			);
+			path = TimeCard;
+			sourceTree = "<group>";
+		};
+		96CCB9302692AF5C006490B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96CCB9312692AF5C006490B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96CCB93F2692AF5C006490B3 /* TimeCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				96CCB9402692AF5C006490B3 /* TimeCardTests.swift */,
+				96CCB9422692AF5C006490B3 /* Info.plist */,
+			);
+			path = TimeCardTests;
+			sourceTree = "<group>";
+		};
+		96CCB94A2692AF5C006490B3 /* TimeCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96CCB94B2692AF5C006490B3 /* TimeCardUITests.swift */,
+				96CCB94D2692AF5C006490B3 /* Info.plist */,
+			);
+			path = TimeCardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96CCB9262692AF5A006490B3 /* TimeCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CCB9502692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCard" */;
+			buildPhases = (
+				96CCB9232692AF5A006490B3 /* Sources */,
+				96CCB9242692AF5A006490B3 /* Frameworks */,
+				96CCB9252692AF5A006490B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeCard;
+			productName = TimeCard;
+			productReference = 96CCB9272692AF5A006490B3 /* TimeCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96CCB93B2692AF5C006490B3 /* TimeCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CCB9532692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCardTests" */;
+			buildPhases = (
+				96CCB9382692AF5C006490B3 /* Sources */,
+				96CCB9392692AF5C006490B3 /* Frameworks */,
+				96CCB93A2692AF5C006490B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CCB93E2692AF5C006490B3 /* PBXTargetDependency */,
+			);
+			name = TimeCardTests;
+			productName = TimeCardTests;
+			productReference = 96CCB93C2692AF5C006490B3 /* TimeCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96CCB9462692AF5C006490B3 /* TimeCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CCB9562692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCardUITests" */;
+			buildPhases = (
+				96CCB9432692AF5C006490B3 /* Sources */,
+				96CCB9442692AF5C006490B3 /* Frameworks */,
+				96CCB9452692AF5C006490B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CCB9492692AF5C006490B3 /* PBXTargetDependency */,
+			);
+			name = TimeCardUITests;
+			productName = TimeCardUITests;
+			productReference = 96CCB9472692AF5C006490B3 /* TimeCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96CCB91F2692AF5A006490B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					96CCB9262692AF5A006490B3 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					96CCB93B2692AF5C006490B3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 96CCB9262692AF5A006490B3;
+					};
+					96CCB9462692AF5C006490B3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 96CCB9262692AF5A006490B3;
+					};
+				};
+			};
+			buildConfigurationList = 96CCB9222692AF5A006490B3 /* Build configuration list for PBXProject "TimeCard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96CCB91E2692AF5A006490B3;
+			productRefGroup = 96CCB9282692AF5A006490B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96CCB9262692AF5A006490B3 /* TimeCard */,
+				96CCB93B2692AF5C006490B3 /* TimeCardTests */,
+				96CCB9462692AF5C006490B3 /* TimeCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96CCB9252692AF5A006490B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CCB9352692AF5C006490B3 /* Main.storyboard in Resources */,
+				96CCB9322692AF5C006490B3 /* Preview Assets.xcassets in Resources */,
+				96CCB92F2692AF5C006490B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB93A2692AF5C006490B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB9452692AF5C006490B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96CCB9232692AF5A006490B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CCB92D2692AF5A006490B3 /* ContentView.swift in Sources */,
+				96CCB92B2692AF5A006490B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB9382692AF5C006490B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CCB9412692AF5C006490B3 /* TimeCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96CCB9432692AF5C006490B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CCB94C2692AF5C006490B3 /* TimeCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96CCB93E2692AF5C006490B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CCB9262692AF5A006490B3 /* TimeCard */;
+			targetProxy = 96CCB93D2692AF5C006490B3 /* PBXContainerItemProxy */;
+		};
+		96CCB9492692AF5C006490B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96CCB9262692AF5A006490B3 /* TimeCard */;
+			targetProxy = 96CCB9482692AF5C006490B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96CCB9332692AF5C006490B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96CCB9342692AF5C006490B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96CCB94E2692AF5C006490B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96CCB94F2692AF5C006490B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		96CCB9512692AF5C006490B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeCard/TimeCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeCard/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96CCB9522692AF5C006490B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeCard/TimeCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeCard/Preview Content\"";
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TimeCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		96CCB9542692AF5C006490B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				INFOPLIST_FILE = TimeCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeCard.app/Contents/MacOS/TimeCard";
+			};
+			name = Debug;
+		};
+		96CCB9552692AF5C006490B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				INFOPLIST_FILE = TimeCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeCard.app/Contents/MacOS/TimeCard";
+			};
+			name = Release;
+		};
+		96CCB9572692AF5C006490B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				INFOPLIST_FILE = TimeCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TimeCard;
+			};
+			name = Debug;
+		};
+		96CCB9582692AF5C006490B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Z298ZPM27Y;
+				INFOPLIST_FILE = TimeCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.beah.app.TimeCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TimeCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96CCB9222692AF5A006490B3 /* Build configuration list for PBXProject "TimeCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CCB94E2692AF5C006490B3 /* Debug */,
+				96CCB94F2692AF5C006490B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CCB9502692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CCB9512692AF5C006490B3 /* Debug */,
+				96CCB9522692AF5C006490B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CCB9532692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CCB9542692AF5C006490B3 /* Debug */,
+				96CCB9552692AF5C006490B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CCB9562692AF5C006490B3 /* Build configuration list for PBXNativeTarget "TimeCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CCB9572692AF5C006490B3 /* Debug */,
+				96CCB9582692AF5C006490B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96CCB91F2692AF5A006490B3 /* Project object */;
+}
