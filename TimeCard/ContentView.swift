@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World!")
+        VStack{
+            Button(action: {
+                
+            }, label: {
+                Text("勤務開始！")
+            })
+            Button(action: {
+                
+            }, label: {
+                Text("勤務終了！")
+            })
+            .padding()
+        }
     }
 }
 
