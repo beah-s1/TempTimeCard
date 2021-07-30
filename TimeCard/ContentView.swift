@@ -12,23 +12,25 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            Button(action: {
-                tcController.start()
-            }, label: {
-                Text("勤務開始！")
-            })
-            
-            Text(tcController.startTimeString)
-            
-            Button(action: {
-                tcController.end()
-            }, label: {
-                Text("勤務終了！")
-            })
-            
-            Text(tcController.endTimeString)
+            HStack{
+                Button(action: {
+                    tcController.start()
+                }, label: {
+                    Text("勤務開始！")
+                })
+                
+                Button(action: {
+                    tcController.end()
+                }, label: {
+                    Text("勤務終了！")
+                })
+            }
             
             List {
+                if tcController.startTimeString != ""{
+                    Text(tcController.startTimeString)
+                }
+                
                 ForEach(tcController.punchDataList){ punch in
                     HStack{
                         Text(punch.workTimeText)

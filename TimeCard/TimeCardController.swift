@@ -24,7 +24,7 @@ class TimeCardController: NSObject, ObservableObject{
     override init() {
         super.init()
         
-        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: true))
+        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: false))
         updateUnpunchedTime()
     }
     
@@ -32,7 +32,7 @@ class TimeCardController: NSObject, ObservableObject{
         startTime = Date()
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "勤務開始:YYYY/MM/dd HH:mm"
+        formatter.dateFormat = "YYYY/MM/dd HH:mm:ss ~"
         
         startTimeString = formatter.string(from: startTime!)
     }
@@ -40,8 +40,9 @@ class TimeCardController: NSObject, ObservableObject{
     func end() {
         endTime = Date()
         
-        let workTime = endTime!.timeIntervalSince(startTime!)
-        endTimeString = "勤務終了 勤務時間: \(Int(workTime)/3600)時間\(Int(workTime)/60)分\(Int(workTime)%60)秒"
+        /*let workTime = endTime!.timeIntervalSince(startTime!)
+        endTimeString = "勤務終了 勤務時間: \(Int(workTime)/3600)時間\(Int(workTime)/60)分\(Int(workTime)%60)秒"*/
+        startTimeString = ""
         
         let newPunchData = PunchData()
         newPunchData.startTime = startTime!
@@ -54,7 +55,7 @@ class TimeCardController: NSObject, ObservableObject{
             realm.add(newPunchData)
         }
         
-        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: true))
+        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: false))
         updateUnpunchedTime()
     }
     
@@ -63,7 +64,7 @@ class TimeCardController: NSObject, ObservableObject{
             punchData.isAppliedToOWR = true
         }
         
-        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: true))
+        punchDataList = Array(realm.objects(PunchData.self).filter("isAppliedToOWR == %@", false).sorted(byKeyPath: "id", ascending: false))
         updateUnpunchedTime()
     }
     
