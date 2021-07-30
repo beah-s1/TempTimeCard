@@ -27,10 +27,23 @@ struct ContentView: View {
             })
             
             Text(tcController.endTimeString)
+            
+            List {
+                ForEach(tcController.punchDataList){ punch in
+                    HStack{
+                        Text(punch.workTimeText)
+                        Button("打刻済みにする") {
+                            tcController.changeToPunched(punchData: punch)
+                        }
+                    }
+                }
+                Text("------------------------------")
+                Text("未打刻時間合計: \(tcController.unpunchedTimeString)")
+            }
         }
         
         .padding()
-        .frame(width: 300, height: 300, alignment: .center)
+        .frame(width: 600, height: 300, alignment: .center)
     }
 }
 

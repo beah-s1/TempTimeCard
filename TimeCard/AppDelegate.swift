@@ -7,6 +7,7 @@
 
 import Cocoa
 import SwiftUI
+import RealmSwift
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -30,6 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)*/
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         guard let button = self.statusBarItem.button else { return }
@@ -37,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         button.action = #selector(showHidePopover(_:))
         
         let popover = NSPopover()
-        popover.contentSize = NSSize(width: 300, height: 300)
+        popover.contentSize = NSSize(width: 600, height: 300)
         popover.behavior = .transient
         let contentView = ContentView()
         popover.contentViewController = NSHostingController(rootView: contentView)
