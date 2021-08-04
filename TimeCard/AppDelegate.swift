@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
         guard let button = self.statusBarItem.button else { return }
-        button.image = NSImage(systemSymbolName: "checkmark.circle.fill", accessibilityDescription: nil)
+        button.image = NSImage(systemSymbolName: "deskclock.fill", accessibilityDescription: nil)
         button.action = #selector(showHidePopover(_:))
         
         let popover = NSPopover()

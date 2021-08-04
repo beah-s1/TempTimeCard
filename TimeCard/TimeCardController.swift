@@ -90,7 +90,7 @@ class PunchData: Object, Identifiable{
         
         let distance = Int(self.endTime.timeIntervalSince(self.startTime))
         
-        return "\(formatter.string(from: self.startTime)) ~ \(formatter.string(from: self.endTime)) 勤務時間:\(distance/3600)時間\(distance/60)分\(distance%60)秒"
+        return "\(formatter.string(from: self.startTime)) ~ \(formatter.string(from: self.endTime)) 勤務時間:\(distance/3600)時間\((distance%3600)/60)分\((distance%3600)%60)秒"
     }
     
     var workTime: TimeInterval{
